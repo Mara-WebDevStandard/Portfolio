@@ -21,9 +21,11 @@ This website displays my body of work as a web developer to prospective employer
 * Screenshots:
 <br /> 
 Desktop
+
 ![desktop browser view of internal webpages](/images/readme/desktop.png)
 
 Phone
+
 ! [phone browser view of internal webpages](/images/readme/phone.png)
 
 * Target Audience
