@@ -30,7 +30,7 @@ Phone
 
 ![phone browser view of internal webpages](/images/readme/phone.png)
 
-* Target Audience
+* Target Audience:
 Prospective employers.
 
 * Tech stack:
