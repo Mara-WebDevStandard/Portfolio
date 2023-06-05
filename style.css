@@ -1,0 +1,555 @@
+html{
+    height:100%;
+    width:100%;
+    background-color: #faf1ec;
+}
+.body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Wavy light brown background */
+.background {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 88%;
+}
+
+/* Nav Menu */
+.navigation {
+    position:relative;
+    width: 70%;
+    margin-left:6%;
+    margin-top: 4.5%;
+    margin-bottom: 2%;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+/* Link Text Styling */
+a {
+    color: #faefe4;
+    font-family: 'Poppins', sans-serif;
+    margin-right:8%;
+    text-decoration: none;
+}
+a:hover {
+    color: #a18167;
+}
+
+.main {
+    position:relative;
+    flex-grow:1;
+    margin-top: 10%;
+}
+
+.feature {
+    position:relative;
+    margin-bottom: 13%;
+}
+
+/* Landing Page Title Name Graphic */
+.name {
+    position:relative;
+    margin-left:6%;
+    margin-top: 3%;
+    width: 25%;
+}
+
+/* Landing Page Introduction Text Styling */
+.Intro {
+    position:relative;
+    margin-left:7%;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    max-width: 45%;
+    color: #fff8f1;
+}
+/* Landing Page Contact Text Styling */
+.contact {
+    position:relative;
+    margin-top: 5%;
+    margin-left:7%;
+    font-size: 1.5vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    max-width: 45%;
+    color: #fff8f1;
+}
+
+/* Landing Page Social Media Graphic Links */
+.buttons {
+    position:relative;
+    width: 30%;
+    margin-top: 30%;
+    margin-left: 8%;
+    margin-bottom:5%;
+}
+#linkedin:hover,
+#github:hover {
+    transform: scale(1.1, 1.1);
+}
+#linkedin,
+#github {
+    max-width:10%;
+    margin-right: -5%;
+    margin-top: 2%;
+    margin-bottom:5%;
+    width: 5%;
+}
+
+/* Landing Page Main Graphic Photo */
+.profile {
+    position:fixed;
+    width: 38%;
+    right: 0px;
+    margin-right: 2%;
+    margin-top: 10%;
+    transition: 1s;
+}
+.profile:hover {
+    transform: translate(-20px, 20px);
+}
+
+/* landing page tablet portrait sizing*/
+@media screen and (max-width: 768px) {
+    .profile {
+        width: 35%;
+        margin-right: 6%;
+    }
+    .navigation,
+    .Intro,
+    .contact
+     {
+        font-size: 2.5vw;
+        width: 60%;
+    }
+    .contact
+    {
+       margin-top: 20%;
+       color: #a18167;
+   }
+   .background
+   {
+      width: 88%;
+  }
+  }
+
+/* landing page phone sizing and default navigation sizing  */
+@media screen and (max-width: 480px) {
+    .name,
+    .Intro,
+    .contact,
+    #linkedin,
+    #github{
+        width: 100%;
+        color:#a18167;
+        position: relative;
+     }
+
+     .navigation {
+        position:relative;
+        width: 70%;
+        margin-left:17%;
+        margin-top: -2%;
+        font-size: 7vw;
+        font-weight: 400;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+     }
+
+     a {
+        color: #a18167;
+     }
+
+     .name {
+        width: 60%;
+        margin-left: 15%;
+        margin-top: 1%;
+     }
+
+     .profile {
+        position: relative;
+        width: 40%;
+        right: 25px;
+        padding: 0;
+        margin-left: 50%;
+        margin-top: 0%;
+        z-index: 0;
+     }
+
+     .profile:hover {
+        transform: translate(0,0);
+    }
+
+     .Intro
+      {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50%;
+        font-size: 5vw;
+        text-align: center;
+     }
+
+     .contact
+      {
+        margin: 0 auto;
+        font-size: 3.5vw;
+        margin-bottom: 6%;
+     }
+
+     #linkedin,
+     #github{
+        justify-content: center; 
+        margin-left: 20%;
+      }
+
+     .background {
+        position: relative;
+        width:100%;
+        z-index: 0;
+     }
+  }
+
+/* Footer Styling */
+.footer {
+    position:relative;
+    display:flex;
+    margin-top: auto;
+    background-color: #e8d8cc;
+    padding:4em;
+    box-sizing: border-box;
+    color:#b5a394;
+    width:100%;
+}
+
+/* Main Blog Element */
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* Blog Decorative Boxes and Title Styling*/
+#p1, #p2, #p3, #p4, #p5 {
+    background-color: #fff8f1;
+    height: 500px;
+    width: 300px;
+    margin: 30px;
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Amatic SC', cursive;
+    box-shadow: 8px 8px #f0decf;
+    border-radius: 50px;
+}
+#p1 {
+color:#e2d3cd;
+}
+#p2 {
+    color:#e3dad5;
+}
+#p3 {
+    color:#e6cdb5;
+}
+#p4 {
+    color:#f7d8b5;
+}
+#p5 {
+    color:#d0c8b6;
+}
+
+/* Blog Title */
+.blogtitle {
+    text-align: center;
+    color: #faefe4;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+/* Blog Post Graphic Styling */
+#i1, #i3, #i5 {
+    width: 30%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+#i2, #i4 {
+    width: 40%;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+
+/* Blog Post Content Text Styling */
+#t1, #t2, #t3, #t4, #t5 {
+    color: #a89689;
+    font-size: 1.3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Blog Post Date Published */
+#date1, #date2, #date3, #date4, #date5 {
+    font-size: 0.5em;
+    margin: 0;
+}
+
+/* blog phone sizing */
+@media screen and (max-width: 480px) {
+    .blogtitle {
+        font-size: 4em;
+        max-width: 70%;
+        margin-left: 14%;
+        margin-top: 2%;
+        text-align: center;
+        color: #a89689;
+     }
+
+     .blog {
+        position: relative;
+        margin-top: 60%;
+     }
+
+     #t1, #t2, #t3, #t4, #t5 {
+        font-size: 15px;
+    }
+}
+
+/* blog even smaller phone sizing */
+@media screen and (max-width: 300px) {
+    .blogtitle {
+        font-size: 1.9em;
+        max-width: 50%;
+        margin-left: 10%;
+        margin-top: -0.1%;
+     }
+     #t1, #t2, #t3, #t4, #t5 {
+        font-size: 10px;
+    }
+}
+
+/* About Me Page Container */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  About Me Decorative Box*/
+.aboutme {
+    background-color: #fff8f1;
+    height: 700px;
+    width: 600px;
+    border-radius: 50px;
+    box-shadow: 10px 10px #f0decf;
+    text-align: center;
+    padding: 60px;
+    margin: 10%;
+}
+
+/*  Inner About Me Title */
+#innerabouttitle {
+    font-family: 'Amatic SC', cursive;
+    color: #e2d3cd;
+    font-size: 3em;
+}
+
+/*  About Me Microphone Image */
+#aboutimage {
+    width: 40%;
+}
+
+/*  About Text Content */
+#abouttext {
+    margin-top: 20%;
+    font-family: 'Architects Daughter', cursive;
+    color: grey;
+    font-size: 1.2em;
+}
+
+/*  About Me Main Page Title */
+#abouttitle {
+    text-align: center;
+    color: #faefe4;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+/* about me phone sizing */
+@media screen and (max-width: 480px) {
+    .aboutme {
+        margin-top: 60%;
+        height: 200%;
+    }
+    #abouttitle {
+        font-size: 5em;
+        max-width: 70%;
+        margin-left: 15%;
+        margin-top: 0%;
+        text-align: center;
+        color: #a89689;
+     }
+     .about {
+        position: relative;
+        margin-top: 30%;
+     }
+}
+
+/* about me smaller phone sizing */
+@media screen and (max-width: 300px) {
+    #abouttitle {
+        font-size: 4em;
+        max-width: 70%;
+        margin-left: 15%;
+        margin-top: 4%;
+        text-align: center;
+        color: #a89689;
+     }
+     .about {
+        position: relative;
+        margin-top: 15%;
+     }
+}
+
+/*  Resume Main Page Title */
+.resumetitle {
+    text-align: center;
+    color: #faefe4;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 600;
+    font-size: 2.5em;
+}
+
+
+
+/* resume phone sizing */
+@media screen and (max-width: 480px) {
+
+     .resumetitle {
+        font-size: 5em;
+        max-width: 70%;
+        margin-left: 15%;
+        margin-top: 7%;
+        text-align: center;
+     }
+
+}
+
+/*  Resume Main Containers */
+.resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+/*  Resume Content */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 8%;
+  }
+  .leftcolumn,
+  .rightcolumn {
+    flex: 1;
+    margin: 10px;
+  }
+  .leftcolumn,
+  .rightcolumn {
+    margin-bottom: 10px;
+  }
+  .experience {
+    margin-bottom: 20px;
+  }
+  .bottom {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #skill-list {
+  line-height: 300%;
+  list-style: none;
+  }
+  #task-list {
+    line-height: 200%;
+    }
+  #resumename {
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+  }
+ #skill-list,
+ #task-list,
+.resumesubtitle,
+.resumecontact {
+ font-family: 'Raleway', sans-serif;
+ padding: 0;
+}
+
+/* medium screen resume */
+@media screen and (max-width: 900px) {
+    #resumename {
+        margin-top: 0%;
+            }
+            .bottom {
+                margin-top: 5%;
+              }
+              #task-list {
+                line-height: 150%;
+                }
+                .resume-container {
+                    padding: 0;
+                }
+}
+
+/* small screen resume */
+@media screen and (max-width: 633px) {
+
+    #task-list {
+        line-height: 150%;
+        }
+        #skill-list,
+        #task-list,
+       .resumesubtitle,
+       .resumecontact {
+        font-size: small;
+       }
+
+}
+
+/* phone screen resume */
+@media screen and (max-width: 480px) {
+    .resumetitle {
+        color: #a18167;
+    }
+    .aboutme {
+        margin-top: 70%;
+    }
+    #task-list {
+        line-height: 150%;
+        }
+}
