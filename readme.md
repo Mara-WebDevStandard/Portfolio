@@ -34,9 +34,9 @@ Phone
 Prospective employers.
 
 * Tech stack:
-- Vs Code
-- Adobe Illustrator
-- Figma
-- HTML
-- CSS
-- Git & Github
+    - Vs Code
+    - Adobe Illustrator
+    - Figma
+    - HTML
+    - CSS
+    - Git & Github
